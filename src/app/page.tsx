@@ -2,8 +2,15 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       {/* Section 1: Hero Headline */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 relative">
-        <div className="max-w-4xl w-full px-4">
+      <section 
+        className="min-h-screen flex flex-col items-center justify-center px-4 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/hero-background.jpg)',
+        }}
+      >
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="max-w-4xl w-full px-4 relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center leading-tight text-white tracking-tight">
             AI Automation Systems for Lead Generation & Sales
           </h1>
@@ -11,8 +18,15 @@ export default function Home() {
       </section>
 
       {/* Section 2: Sub-Headline */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 relative">
-        <div className="max-w-4xl w-full px-4">
+      <section 
+        className="min-h-screen flex flex-col items-center justify-center px-4 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/section2-background.jpg)',
+        }}
+      >
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="max-w-4xl w-full px-4 relative z-10">
           <p className="text-3xl md:text-5xl lg:text-6xl font-bold text-center leading-tight text-white tracking-tight">
             I build AI-driven SDR systems that qualify leads and book meetings automatically.
           </p>
@@ -20,8 +34,15 @@ export default function Home() {
       </section>
 
       {/* Section 3: Credibility Indicators */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 relative">
-        <div className="max-w-4xl w-full px-4">
+      <section 
+        className="min-h-screen flex flex-col items-center justify-center px-4 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/section3-background.jpg)',
+        }}
+      >
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="max-w-4xl w-full px-4 relative z-10">
           <div className="flex flex-col items-center space-y-8 md:space-y-10 text-center text-white">
             <div className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">Built with n8n, Supabase, Vercel</div>
             <div className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">Modern AI automations for agencies & online businesses</div>
