@@ -13,7 +13,7 @@ export default function Home() {
       {/* Section 2: Sub-Headline */}
       <section className="min-h-screen flex flex-col items-center justify-center px-4 relative">
         <div className="max-w-4xl w-full px-4">
-          <p className="text-4xl md:text-6xl lg:text-7xl font-bold text-center leading-tight text-neutral-200 tracking-tight">
+          <p className="text-3xl md:text-5xl lg:text-6xl font-bold text-center leading-tight text-white tracking-tight">
             I build AI-driven SDR systems that qualify leads and book meetings automatically.
           </p>
         </div>
@@ -22,10 +22,10 @@ export default function Home() {
       {/* Section 3: Credibility Indicators */}
       <section className="min-h-screen flex flex-col items-center justify-center px-4 relative">
         <div className="max-w-4xl w-full px-4">
-          <div className="flex flex-col items-center space-y-2 text-center text-white opacity-75">
-            <div className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">Built with n8n, Supabase, Vercel</div>
-            <div className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">Modern AI automations for agencies & online businesses</div>
-            <div className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">Done-for-you installation & support</div>
+          <div className="flex flex-col items-center space-y-8 md:space-y-10 text-center text-white">
+            <div className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">Built with n8n, Supabase, Vercel</div>
+            <div className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">Modern AI automations for agencies & online businesses</div>
+            <div className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">Done-for-you installation & support</div>
           </div>
         </div>
       </section>
