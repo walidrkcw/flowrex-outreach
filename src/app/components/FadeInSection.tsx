@@ -10,13 +10,15 @@ interface FadeInSectionProps {
 }
 
 export default function FadeInSection({ children, className = '', style, delay = 0 }: FadeInSectionProps) {
-  const [isVisible, setIsVisible] = useState(delay === 0)
+  const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
-    // For the first section (hero), fade in immediately on load
+    // For the first section (hero), fade in with a delay on initial load
     if (delay === 0) {
-      setIsVisible(true)
+      setTimeout(() => {
+        setIsVisible(true)
+      }, 300) // 300ms delay for smooth hero fade-in
       return
     }
 

@@ -11,7 +11,7 @@ export default function Home() {
         }}
       >
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         {/* Gradient fade to black at bottom for seamless transition */}
         <div 
           className="absolute inset-0 pointer-events-none z-[5]"
@@ -35,7 +35,7 @@ export default function Home() {
         delay={100}
       >
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         {/* Gradient fade to black at top and bottom for seamless transitions */}
         <div 
           className="absolute inset-0 pointer-events-none z-[5]"
@@ -59,7 +59,7 @@ export default function Home() {
         delay={200}
       >
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         {/* Gradient fade to black at top and bottom for seamless transitions */}
         <div 
           className="absolute inset-0 pointer-events-none z-[5]"
