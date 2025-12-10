@@ -1,4 +1,5 @@
 import FadeInSection from './components/FadeInSection'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -19,7 +20,27 @@ export default function Home() {
             background: 'linear-gradient(to bottom, transparent 0%, transparent 60%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.7) 90%, black 100%)',
           }}
         ></div>
-        <div className="max-w-4xl w-full px-4 relative z-10">
+        <div className="max-w-4xl w-full px-4 relative z-10 flex flex-col items-center">
+          {/* Premium Profile Photo Container */}
+          <div className="mb-8 md:mb-12 relative">
+            <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.1)] backdrop-blur-sm bg-gradient-to-br from-white/10 via-white/5 to-transparent relative">
+              {/* Inner ring for premium effect */}
+              <div className="absolute inset-0 rounded-full border border-white/10"></div>
+              {/* REX Logo */}
+              <div className="w-full h-full bg-black relative">
+                <Image
+                  src="/rex-logo.png"
+                  alt="REX Logo"
+                  width={160}
+                  height={160}
+                  className="w-full h-full object-contain p-3"
+                  priority
+                />
+              </div>
+            </div>
+            {/* Subtle outer glow effect */}
+            <div className="absolute inset-0 rounded-full bg-white/5 blur-2xl -z-10 scale-110"></div>
+          </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center leading-tight text-white tracking-tight">
             AI Automation Systems for Lead Generation & Sales
           </h1>
