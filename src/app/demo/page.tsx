@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function DemoPage() {
   // YouTube embed with mobile-friendly parameters
-  const videoUrl = 'https://www.youtube.com/embed/vKbJK-O8-co?playsinline=1&modestbranding=1&rel=0'
+  const videoUrl = 'https://www.youtube.com/embed/OEBehdtw94I?playsinline=1&modestbranding=1&rel=0'
 
   return (
     <main className="flex flex-col min-h-screen items-center justify-start px-4 py-6 sm:py-8 md:py-12 overflow-x-hidden">
