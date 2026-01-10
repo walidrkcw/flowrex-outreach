@@ -19,7 +19,7 @@ export default function DemoPage() {
           AI SDR Demo
         </h1>
         <p className="text-base sm:text-xl md:text-2xl lg:text-3xl text-white/90 tracking-tight px-2">
-          Qualify leads + book meetings automatically.
+          Qualify leads + book meetings automatically
         </p>
       </div>
 
@@ -53,21 +53,13 @@ export default function DemoPage() {
       {/* CTA and Note */}
       <div className="max-w-5xl w-full text-center space-y-3 mb-6 sm:mb-8">
         <p className="text-base sm:text-lg md:text-xl text-white/90 px-4">
-          Reply to my email for the next step.
+          Reply to my email for the next step
         </p>
         <p className="text-xs sm:text-sm md:text-base text-white/60 px-4">
-          If you didn't request this demo, ignore this page.
+          If you didn't request this demo, ignore this page
         </p>
       </div>
 
-      {/* Bullet Points */}
-      <div className="max-w-5xl w-full mb-6 sm:mb-8">
-        <ul className="flex flex-col items-center space-y-2 sm:space-y-3 text-center list-none px-4">
-          <li className="text-sm sm:text-base md:text-lg text-white/80">• AI qualification</li>
-          <li className="text-sm sm:text-base md:text-lg text-white/80">• Personalized follow-up</li>
-          <li className="text-sm sm:text-base md:text-lg text-white/80">• Calendar + CRM updates</li>
-        </ul>
-      </div>
     </main>
   )
 }
