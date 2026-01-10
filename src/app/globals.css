@@ -8,7 +8,11 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -17,5 +21,9 @@ body {
   font-family: var(--font-science-gothic), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Prevent scroll jank on mobile */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
 }
 
