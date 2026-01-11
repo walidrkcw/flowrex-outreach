@@ -51,7 +51,7 @@ export default function DemoPage() {
           }}
         ></div>
         <div className="relative z-10">
-          © 2025 Flowrex
+          © 2026 Flowrex
         </div>
       </footer>
     </main>
