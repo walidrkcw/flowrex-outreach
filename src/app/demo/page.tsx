@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import LazyVideo from './LazyVideo'
 
 export const metadata: Metadata = {
   robots: {
@@ -8,8 +9,7 @@ export const metadata: Metadata = {
 }
 
 export default function DemoPage() {
-  // YouTube embed with mobile-friendly parameters
-  const videoUrl = 'https://www.youtube.com/embed/OEBehdtw94I?playsinline=1&modestbranding=1&rel=0'
+  const videoUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/AI%20SDR%20DEMO'
 
   return (
     <main className="flex flex-col min-h-screen items-center justify-start px-4 py-6 sm:py-8 md:py-12 overflow-x-hidden">
@@ -26,27 +26,7 @@ export default function DemoPage() {
       {/* Video Container */}
       <div className="w-full max-w-5xl mb-6 sm:mb-8 md:mb-12">
         <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 shadow-2xl border border-white/10 mx-auto">
-          {/* Responsive 16:9 Video Embed - optimized for mobile */}
-          <div 
-            className="relative w-full overflow-hidden rounded-lg"
-            style={{ 
-              paddingBottom: '56.25%', /* 16:9 aspect ratio */
-              minHeight: '200px',
-            }}
-          >
-            <iframe
-              src={videoUrl}
-              className="absolute top-0 left-0 w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              loading="lazy"
-              title="AI SDR Demo Video"
-              style={{
-                transform: 'translateZ(0)', // Hardware acceleration for smooth playback
-              }}
-            />
-          </div>
+          <LazyVideo videoUrl={videoUrl} />
         </div>
       </div>
 
@@ -60,6 +40,19 @@ export default function DemoPage() {
         </p>
       </div>
 
+      {/* Footer */}
+      <footer className="py-8 text-[10px] md:text-xs text-center text-[#000080] relative">
+        {/* Gradient fade from black at top for seamless transition */}
+        <div 
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to bottom, black 0%, rgba(0,0,0,0.7) 30%, transparent 100%)',
+          }}
+        ></div>
+        <div className="relative z-10">
+          © 2025 Flowrex
+        </div>
+      </footer>
     </main>
   )
 }
