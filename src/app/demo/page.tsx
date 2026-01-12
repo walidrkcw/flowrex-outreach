@@ -13,7 +13,15 @@ export default function DemoPage() {
   const posterUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/thumb.jpg'
 
   return (
-    <main className="flex flex-col min-h-screen items-center justify-start px-4 py-6 sm:py-8 md:py-12 overflow-x-hidden">
+    <main 
+      className="flex flex-col min-h-screen items-center justify-start px-4 py-6 sm:py-8 md:py-12 overflow-x-hidden relative bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: 'url(/hero-background.jpg)',
+      }}
+    >
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-black/80"></div>
+      
       {/* Header Section */}
       <div className="max-w-4xl w-full relative z-10 flex flex-col items-center justify-center text-center mb-6 sm:mb-8 md:mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white tracking-tight mb-4 sm:mb-6">
@@ -25,14 +33,14 @@ export default function DemoPage() {
       </div>
 
       {/* Video Container */}
-      <div className="w-full max-w-5xl mb-6 sm:mb-8 md:mb-12">
+      <div className="w-full max-w-5xl mb-6 sm:mb-8 md:mb-12 relative z-10">
         <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 shadow-2xl border border-white/10 mx-auto">
           <LazyVideo videoUrl={videoUrl} posterUrl={posterUrl} />
         </div>
       </div>
 
       {/* CTA and Note */}
-      <div className="max-w-5xl w-full text-center space-y-3 mb-6 sm:mb-8">
+      <div className="max-w-5xl w-full text-center space-y-3 mb-6 sm:mb-8 relative z-10">
         <p className="text-base sm:text-lg md:text-xl text-white/90 px-4">
           Reply to my email for the next step
         </p>
