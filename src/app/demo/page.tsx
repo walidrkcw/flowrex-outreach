@@ -28,7 +28,7 @@ export default function DemoPage() {
           AI SDR Demo
         </h1>
         <p className="text-base sm:text-xl md:text-2xl lg:text-3xl text-white/90 tracking-tight px-2">
-          Qualify leads + book meetings automatically
+          Qualify Leads + Book Meetings automatically
         </p>
       </div>
 
