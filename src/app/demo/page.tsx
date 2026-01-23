@@ -72,16 +72,31 @@ export default function DemoPage() {
   target="_blank"
   rel="noopener noreferrer"
   className="
+    group relative overflow-hidden
     px-10 py-5 sm:px-12 sm:py-6 rounded-full
-    bg-transparent border-2 border-white/40
-    text-white font-bold text-lg sm:text-xl
-    transition duration-200 ease-out
-    hover:bg-white/10 hover:border-white/70 hover:-translate-y-[1px]
-    focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-0
+    bg-transparent border-2 border-white/35
+    text-white font-bold text-lg sm:text-xl tracking-wide
+    transition-all duration-300 ease-out
+    hover:border-white/85 hover:-translate-y-2 hover:scale-[1.04]
+    hover:bg-white/[0.08]
+    hover:shadow-[0_16px_50px_rgba(255,255,255,0.14)]
+    active:translate-y-0 active:scale-[1.01]
+    focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-0
   "
 >
-  Book a call
+  {/* sheen */}
+  <span
+    className="
+      pointer-events-none absolute inset-0
+      -translate-x-[120%] group-hover:translate-x-[120%]
+      transition-transform duration-700 ease-out
+      bg-gradient-to-r from-transparent via-white/25 to-transparent
+    "
+  />
+
+  <span className="relative z-10">Book a call</span>
 </a>
+
 
 </div>
 
