@@ -68,20 +68,18 @@ export default function DemoPage() {
       {/* Book a Call Button - Premium CTA */}
       <div className="w-full max-w-5xl mb-8 sm:mb-10 md:mb-12 relative z-10 flex justify-center">
         <div className="relative">
-          {/* Outer glow effect - animated */}
-          <div className="absolute inset-0 bg-white/20 blur-3xl -z-10 scale-110 rounded-full animate-pulse"></div>
+          {/* Outer glow effect */}
+          <div className="absolute inset-0 bg-white/20 blur-3xl -z-10 scale-110 rounded-full"></div>
           {/* Secondary glow */}
           <div className="absolute inset-0 bg-blue-500/30 blur-2xl -z-10 scale-105 rounded-full opacity-60"></div>
-          
+
           <a
             href="https://cal.com/rex-hale-e6vhrh/intro"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative px-10 py-5 sm:px-12 sm:py-6 rounded-full bg-gradient-to-br from-white/20 via-white/15 to-white/10 backdrop-blur-md border-2 border-white/30 text-white font-bold text-lg sm:text-xl hover:from-white/30 hover:via-white/25 hover:to-white/20 hover:border-white/40 transition-all duration-500 shadow-[0_0_40px_rgba(255,255,255,0.3),0_0_80px_rgba(59,130,246,0.2),inset_0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_60px_rgba(255,255,255,0.4),0_0_120px_rgba(59,130,246,0.3),inset_0_0_30px_rgba(255,255,255,0.15)] hover:scale-105 active:scale-100 transform"
+            className="relative px-10 py-5 sm:px-12 sm:py-6 rounded-full bg-gradient-to-br from-white/20 via-white/15 to-white/10 backdrop-blur-md border-2 border-white/30 text-white font-bold text-lg sm:text-xl transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3),0_0_80px_rgba(59,130,246,0.2),inset_0_0_20px_rgba(255,255,255,0.1)] hover:scale-105 hover:border-white/50"
           >
-            {/* Inner shine effect */}
             <span className="relative z-10 block">Book a call</span>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
           </a>
         </div>
       </div>

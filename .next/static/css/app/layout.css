@@ -966,6 +966,9 @@ video {
 .duration-500 {
   transition-duration: 500ms;
 }
+.duration-300 {
+  transition-duration: 300ms;
+}
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -995,6 +998,10 @@ body {
 
 .hover\:border-white\/40:hover {
   border-color: rgb(255 255 255 / 0.4);
+}
+
+.hover\:border-white\/50:hover {
+  border-color: rgb(255 255 255 / 0.5);
 }
 
 .hover\:from-white\/30:hover {
