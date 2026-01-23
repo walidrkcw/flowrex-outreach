@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   },
 }
 
+// Force dynamic rendering to prevent SSG timeout
+export const dynamic = 'force-dynamic'
+
 export default function DemoPage() {
   const videoUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/AI%20SDR%20Demo'
   const posterUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/thumb.jpg'
@@ -65,7 +68,7 @@ export default function DemoPage() {
 
       {/* Book a Call Button */}
       <div className="w-full max-w-5xl mb-8 sm:mb-10 md:mb-12 relative z-10 flex justify-center">
-        <ShinyButton onClick={() => window.open('https://calendly.com', '_blank')}>
+        <ShinyButton onClick={() => window.location.href = '/booking'}>
           Book a call
         </ShinyButton>
       </div>
