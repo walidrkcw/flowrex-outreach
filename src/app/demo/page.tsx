@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic'
 
 export default function DemoPage() {
-  const videoUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/AI%20SDR%20Demo'
+  const videoUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/AI%20SDR%20Demo%20%28book%20call%29'
   const posterUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/thumb.jpg'
 
   return (
