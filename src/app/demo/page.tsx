@@ -16,7 +16,7 @@ export default function DemoPage() {
   const posterUrl = 'https://1fuvaseaoclg1cft.public.blob.vercel-storage.com/thumb.jpg'
 
   return (
-    <main 
+    <main
       className="flex flex-col min-h-screen items-center justify-start px-4 py-6 sm:py-8 md:py-12 overflow-x-hidden relative bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: 'url(/hero-background.jpg)',
@@ -25,13 +25,13 @@ export default function DemoPage() {
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/80"></div>
       {/* Gradient fade for seamless transitions */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none z-[5]"
         style={{
           background: 'linear-gradient(to bottom, transparent 0%, transparent 60%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0.7) 90%, black 100%)',
         }}
       ></div>
-      
+
       {/* Header Section */}
       <div className="max-w-4xl w-full relative z-10 flex flex-col items-center justify-center text-center mb-8 sm:mb-10 md:mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-white tracking-tight mb-4 sm:mb-6">
@@ -66,40 +66,37 @@ export default function DemoPage() {
       </div>
 
       {/* Book a Call Button */}
-<div className="w-full max-w-5xl mb-8 sm:mb-10 md:mb-12 relative z-10 flex justify-center">
-  <a
-  href="https://cal.com/rex-hale-e6vhrh/intro"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="
-    group relative overflow-hidden
-    px-10 py-5 sm:px-12 sm:py-6 rounded-full
-    bg-transparent border-2 border-white/35
-    text-white font-bold text-lg sm:text-xl tracking-wide
-    transition-all duration-300 ease-out
-    hover:border-white/85 hover:-translate-y-2 hover:scale-[1.04]
-    hover:bg-white/[0.08]
-    hover:shadow-[0_16px_50px_rgba(255,255,255,0.14)]
-    active:translate-y-0 active:scale-[1.01]
-    focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-0
-  "
->
-  {/* sheen */}
-  <span
-    className="
-      pointer-events-none absolute inset-0
-      -translate-x-[120%] group-hover:translate-x-[120%]
-      transition-transform duration-700 ease-out
-      bg-gradient-to-r from-transparent via-white/25 to-transparent
-    "
-  />
+      <div className="w-full max-w-5xl mb-8 sm:mb-10 md:mb-12 relative z-10 flex justify-center">
+        <a
+          href="https://cal.com/rex-hale-e6vhrh/intro"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            group relative overflow-hidden
+            px-10 py-5 sm:px-12 sm:py-6 rounded-full
+            bg-transparent border-2 border-white/35
+            text-white font-bold text-lg sm:text-xl tracking-wide
+            transition-all duration-300 ease-out
+            hover:border-white/85 hover:-translate-y-2 hover:scale-[1.04]
+            hover:bg-white/[0.08]
+            hover:shadow-[0_16px_50px_rgba(255,255,255,0.14)]
+            active:translate-y-0 active:scale-[1.01]
+            focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-0
+          "
+        >
+          {/* sheen */}
+          <span
+            className="
+              pointer-events-none absolute inset-0
+              -translate-x-[120%] group-hover:translate-x-[120%]
+              transition-transform duration-700 ease-out
+              bg-gradient-to-r from-transparent via-white/25 to-transparent
+            "
+          />
 
-  <span className="relative z-10">Book a call</span>
-</a>
-
-
-</div>
-
+          <span className="relative z-10">Book a call</span>
+        </a>
+      </div>
 
       {/* Note */}
       <div className="max-w-5xl w-full text-center mb-8 sm:mb-10 relative z-10">
@@ -115,4 +112,3 @@ export default function DemoPage() {
     </main>
   )
 }
-
